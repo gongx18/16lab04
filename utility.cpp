@@ -11,7 +11,11 @@
 // these functions
 
 bool isOdd(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if(x % 2 ==1){
+      return true; 
+  }
+  else{
+	return false; 
 }
 bool isEven(int x) { 
   return false;  // REPLACE THIS STUB WITH REAL CODE
