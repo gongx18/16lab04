@@ -1,4 +1,5 @@
 // utility.cpp
+#include "utility.h"
 
 // IN THIS FILE, define any of your OWN functions you may need to 
 // solve the problems.    
@@ -11,15 +12,27 @@
 // these functions
 
 bool isOdd(int x) { 
-  if(x % 2 ==1){
+  if(x % 2 ==1 || x % 2 == -1){
       return true; 
   }
   else{
 	return false; 
+  }
 }
 bool isEven(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if(x%2 == 0){
+      return true; 
+  }
+  return false; 
 }
 bool isPrime(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if(x<=1) return false;
+  else{
+     for(int i=2; i<=x/2; i++){
+         if(x%i == 0){
+             return false; 
+         }
+     }
+  }
+  return true; 
 }
