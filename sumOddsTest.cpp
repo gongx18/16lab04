@@ -8,5 +8,26 @@ int main() {
   // arrays of various sizes.  Include both positive, negative and
   // zero values in your test arrays.
   
-  return 0;
+  
+   int fiveThrees[5]={3,3,3,3,3};
+   assertEquals(15,
+                sumOdds(fiveThrees,5),
+                "sumOdds(fiveThrees, 5)");
+
+   int zeros[3]={0,0,0}; // initializes all elements to 0
+   assertEquals(0,
+                sumOdds(zeros, 3),
+                "sumOdds(zeros, 3)" );
+
+
+   int fiveInts[5]={12,3,4,-9,5};
+   assertEquals(-1,
+                sumOdds(fiveInts, 5),
+                "sumOdds(fiveInts, 5)" );
+
+   assertEquals(-1,
+                sumOdds(fiveInts, 5),
+                "sumOdds(fiveInts, 5)" );
+
+   return 0;
 }
